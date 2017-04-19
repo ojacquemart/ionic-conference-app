@@ -9,6 +9,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IonicStorageModule } from '@ionic/storage';
 
+import { ENV } from '@app/config';
+
 import { ConferenceApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -96,4 +98,10 @@ import { UserData } from '../providers/user-data';
     SplashScreen
   ]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor() {
+    console.log('app @ config', ENV);
+  }
+
+}

@@ -36,5 +36,7 @@
     "@ionic/app-scripts": "1.2.4",
     "typescript": "~2.2.1"
   },
-  "config": {}
+  "config": {
+    "ionic_webpack": "./src/config/webpack.config.js"
+  }
 }
